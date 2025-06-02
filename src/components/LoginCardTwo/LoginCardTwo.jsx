@@ -27,26 +27,27 @@ export default function LoginCardTwo() {
                                         <input className='LoginCardTwo__top__form__input' type="text" placeholder='Email Address' />
                                         <input className='LoginCardTwo__top__form__input' type="text" placeholder='Password' />
                                     </form>
-                                    <div className="LoginCardTwo__top__form__checkBox">
-                                        <form action="#">
-                                            <label htmlFor="">Remember password</label>
-                                            <input type="checkbox" className='LoginCardTwo__top__form__checkBox__one' name="" id="" />
-                                        </form>
 
-
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                
+                    <div className="LoginCardTwo__wrapper__polygan">
+                        <div className="LoginCardTwo__wrapper__polygan__checkBoxs">
+                            <span>Remember password</span>
+                            <form action="#">
+                                <input type="checkbox" className='LoginCardTwo__wrapper__polygan__checkBox' name="" id="" />
+                            </form>
+                        </div>
+                    </div>
                 </div>
                 <div className="LoginCardTwo__wrapper__bottom">
-
+                    <div className="LoginCardTwo__wrapper__bottom__polygan">
+                        <span>Forget password</span>
+                    </div>
 
                     <div className="LoginCardTwo__bottom">
                         <div className="LoginCardTwo__bottom__top">
-                            <span>Forget password</span>
                             <div className="LoginCardTwo__bottom__top__btns">
                                 <button>Login</button>
                                 <button>Register</button>
@@ -55,7 +56,7 @@ export default function LoginCardTwo() {
                         <div className="LoginCardTwo__bottom__midle">
                             <span>Login wit touch ID</span>
                             <div className="LoginCardTwo__bottom__midle__btns">
-                                <FingerprintIcon className='touch_icon'/>
+                                <FingerprintIcon className='touch_icon' />
                             </div>
                         </div>
                         <div className="LoginCardTwo__bottom__bottom">

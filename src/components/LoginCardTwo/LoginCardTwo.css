@@ -108,27 +108,29 @@
   border-top-left-radius: 33px;
   top: 16px;
   width: 374px;
-  height: 558px;
+  border-bottom-right-radius: 49px;
+  /* height: 558px; */
   /* border-radius: inherit; */
   background-color: #ffffff;
-  clip-path: polygon(0 0, 100% 0, 100% 79%, 0 100%);
+  /* clip-path: polygon(0 0, 100% 0, 100% 79%, 0 100%); */
   /* box-shadow: 0 4px 14px 0 #000000AD; */
   /* clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 50%); */
 }
 
 .LoginCardTwo__wrapper__bottom {
+  border-top-left-radius: 49px;
   position: absolute;
   bottom: 16px;
   display: flex;
   /* position: relative; */
   width: 374px;
-  height: 419px;
+  height: 260px;
   background: #ffffff;
-  clip-path: polygon(0% 32%, 100% 4%, 100% 100%, 0 100%);
+  /* clip-path: polygon(0% 32%, 100% 4%, 100% 100%, 0 100%); */
   border-bottom-left-radius: inherit;
   border-bottom-right-radius: inherit;
   align-items: end;
-    padding-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
   justify-content: center;
   gap: 0.5rem;
   /* box-shadow: 0 4px 14px 0 #000000AD; */
@@ -142,11 +144,10 @@
 }
 
 .LoginCardTwo__bottom__top > span {
-    font-size: 19px;
-    font-weight: 400 ;
-    color: #0386D0;
+  font-size: 19px;
+  font-weight: 400;
+  color: #0386d0;
 }
-
 
 .LoginCardTwo__bottom__top__btns > button:nth-child(1) {
   width: 151px;
@@ -172,83 +173,142 @@
   gap: 2.5rem;
 }
 
-
-.LoginCardTwo__bottom__midle__btns{
-    width: 69px;
-    height: 72px;
-    display: flex
-;
-    align-items: center;
-    justify-content: center;
-    background: #0386D0;
-    border-radius: 14px;
+.LoginCardTwo__bottom__midle__btns {
+  width: 69px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0386d0;
+  border-radius: 14px;
 }
 
-.LoginCardTwo__bottom__midle{
-    display: flex
-    ;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+.LoginCardTwo__bottom__midle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.LoginCardTwo__bottom__bottom__card{
-    /* display: block; */
-    width: 39px;
-    height: 39px;
-    display: flex
-;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background: #3B5998;
+.LoginCardTwo__bottom__bottom__card {
+  /* display: block; */
+  width: 39px;
+  height: 39px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #3b5998;
 }
 
-.LoginCardTwo__bottom__bottom{
-    display: flex
-;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    padding-top: 1.5rem;
+.LoginCardTwo__bottom__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 1.5rem;
 }
 
-.icon{
-    color: #FFFFFF;
+.icon {
+  color: #ffffff;
 }
 
-.LoginCardTwo__bottom__bottom__cards{
-    display: flex
-;
-    align-items: center;
-    justify-content: space-between;
-    width: 232px;
+.LoginCardTwo__bottom__bottom__cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 232px;
 }
 
-.touch_icon{
-    font-size: 55px ;
+.touch_icon {
+  width: 50px ;
+  height: 50px ;
+  color: #ffffff;
 }
 
-.LoginCardTwo__top__form__infos__title{
-    font-size: 21px ;
-    font-weight: 400;
-    color: #000000;
-    line-height: 100%;
+.LoginCardTwo__top__form__infos__title {
+  font-size: 21px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 100%;
 }
 
-.LoginCardTwo__top__form__infos__parag{
-    font-size: 16px ;
-    font-weight: 400;
-    line-height: 29px ;
+.LoginCardTwo__top__form__infos__parag {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
 }
 
-.LoginCardTwo__top__form__infos__parag__link{
-    color: #036BB9;
+.LoginCardTwo__top__form__infos__parag__link {
+  color: #036bb9;
 }
 
-.LoginCardTwo__top__form__checkBox__one{
-    width: 21px ;
+.LoginCardTwo__top__form__checkBox__one {
+  width: 21px;
+  height: 21px;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px 0 #00000040;
+}
+
+.LoginCardTwo__wrapper__polygan {
+  /* position: absolute;
+  border-top-right-radius: 58px;
+  bottom: -80px ;
+  height: 90px;
+  width: 100%;
+  clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 0 100%);
+  background-color: #ffff; */
+  position: absolute;
+  border-top-right-radius: 58px;
+  bottom: -115px;
+  height: 129px;
+  width: 100%;
+  clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 0 100%);
+  background-color: #ffff;
+}
+.LoginCardTwo__wrapper__bottom__polygan {
+  /* position: absolute;
+    border-bottom-left-radius: -58px;
+    top: -88px ;
+    right: 0;
+    height: 90px;
+    width: 90%;
+    clip-path: polygon(0% 100% , 100% 100% , 100% 0%, 0 100%);
+    background-color: #ffff; */
+  position: absolute;
+  border-bottom-left-radius: -58px;
+  top: -120px;
+  right: 0;
+  height: 124px;
+  width: 92%;
+  clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0 100%);
+  background-color: #ffff;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+.LoginCardTwo__wrapper__bottom__polygan > span {
+  z-index: 99;
+  padding: 1.75rem;
+  color: #000000;
+}
+
+.LoginCardTwo__wrapper__polygan__checkBoxs {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  font-size: 15px;
+  padding-top: 1.5rem;
+  padding-left: 2.2rem;
+}
+
+.LoginCardTwo__wrapper__polygan__checkBox{
+    width: 24px ;
     height: 21px ;
     border-radius: 2px ;
-    box-shadow: 0 1px 2px 0 #00000040;
 }
+
