@@ -4,19 +4,10 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FingerprintIcon from '@mui/icons-material/Fingerprint';
+import useLocalStorage from "./../../Hook/useLocalStorage"
 import './LoginCardTwo.css'
 export default function LoginCardTwo() {
-
-    const [email , setEmail] = useState(() => {
-        let localData = localStorage.getItem("email")
-        if(localData){
-            return localData
-        }
-        return " "
-    })
-    useEffect(()=>{
-        localStorage.setItem("email" , email)
-    } , [email])
+    const [email , setEmail] = useLocalStorage("email" , "")
     return (
         <>
             <div className="LoginCardTwo">
