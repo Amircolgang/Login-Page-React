@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState , useEffect } from 'react'
 import { FormGroup, FormControlLabel, Checkbox } from '@mui/material'
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -6,6 +6,11 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FingerprintIcon from '@mui/icons-material/Fingerprint';
 import './LoginCardTwo.css'
 export default function LoginCardTwo() {
+
+    const [email , setEmail] = useState(20)
+    useEffect(()=>{
+        localStorage.setItem("email" , email)
+    } , [email])
     return (
         <>
             <div className="LoginCardTwo">
@@ -24,7 +29,7 @@ export default function LoginCardTwo() {
                                 </div>
                                 <div className="LoginCardTwo__top__form__inputs">
                                     <form action="#">
-                                        <input className='LoginCardTwo__top__form__input' type="text" placeholder='Email Address' />
+                                        <input onChange={(e) => setEmail(e.target.value)} className='LoginCardTwo__top__form__input' type="text" placeholder='Email Address' />
                                         <input className='LoginCardTwo__top__form__input' type="text" placeholder='Password' />
                                     </form>
 
