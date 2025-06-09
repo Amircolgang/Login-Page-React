@@ -7,7 +7,13 @@ import FingerprintIcon from '@mui/icons-material/Fingerprint';
 import './LoginCardTwo.css'
 export default function LoginCardTwo() {
 
-    const [email , setEmail] = useState(20)
+    const [email , setEmail] = useState(() => {
+        let localData = localStorage.getItem("email")
+        if(localData){
+            return localData
+        }
+        return " "
+    })
     useEffect(()=>{
         localStorage.setItem("email" , email)
     } , [email])
@@ -29,7 +35,7 @@ export default function LoginCardTwo() {
                                 </div>
                                 <div className="LoginCardTwo__top__form__inputs">
                                     <form action="#">
-                                        <input onChange={(e) => setEmail(e.target.value)} className='LoginCardTwo__top__form__input' type="text" placeholder='Email Address' />
+                                        <input value={email} onChange={(e) => setEmail(e.target.value)} className='LoginCardTwo__top__form__input' type="text" placeholder='Email Address' />
                                         <input className='LoginCardTwo__top__form__input' type="text" placeholder='Password' />
                                     </form>
 
